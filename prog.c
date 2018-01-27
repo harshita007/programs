@@ -1,16 +1,21 @@
 #include<stdio.h>
+#include<string.h>
 void main()
 {
-int n;
-printf("enter a number");
-scanf("%d",&n);
-if(n%2==0){
-	printf("Number is even");
+char c;
+printf("enter a character");
+scanf("%c",&c);
+if(c>=65 && c<=90)
+{
+	c=c+32;
+}
+if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
+	printf("Vowel");
 	
 }
 else
 {
-	printf("Number is  odd");
+	printf("Consonant");
 	
 }
 }
